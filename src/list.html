@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="bookControllers">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body ng-controller="BookListCtrl">
+		<div>
+			<li ng-repeat="book in books">
+				<p><span>{{book.name}}:</span>{{book.anuth}}</p>
+				 <a href="#/src/{{book.bookId}}">{{book.name}}</a>
+			</li>
+		</div>
+	</body>
+	<script src="framework/angular-1.3.0.14/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/controllers.js" type="text/javascript" charset="utf-8"></script>
+</html>
